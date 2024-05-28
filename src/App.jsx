@@ -1,6 +1,6 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Root from "./Layout/Root";
-import { Aloqa, Home, NotFound, Yangiliklar } from "./components";
+import { Aloqa, Galeriya, Home, Jadvalar, NotFound, Yangiliklar } from "./components";
 export default function App() {
   const route = createBrowserRouter([
     {
@@ -19,6 +19,14 @@ export default function App() {
         {
           path: "yangiliklar",
           element: <Yangiliklar />,
+        },
+        {
+          path: "galeriya",
+          element: <Galeriya />,
+        },
+        {
+          path: "jadvalar",
+          element: <Jadvalar />,
         },
       ],
     },

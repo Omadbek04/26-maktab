@@ -1,16 +1,17 @@
 import { Outlet } from "react-router-dom";
-import { Navbar } from "../components";
+import { Aloqa, Navbar } from "../components";
 
 const Root = () => {
   return (
-    <>
-      <header>
+    <div className=" flex flex-col min-h-screen">
+      <header className="flex-1">
         <Navbar />
       </header>
-      <main>
+      <main  className="flex-1">
         <Outlet />
       </main>
-    </>
+      <Aloqa />
+    </div>
   );
 };
 

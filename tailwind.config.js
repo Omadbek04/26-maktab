@@ -2,7 +2,11 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundColor:{
+        footerDarkBg: "rgb(20, 22, 60)",
+      }
+    },
   },
   plugins: [],
 };

@@ -3,7 +3,9 @@ import { home, h2, h3, h4, t1, t2, t3 } from "../assets"; // Ensure paths to ass
 const Home = () => {
   return (
     <>
-      <img src={home} alt={"hero img"} className=" w-full xl:h-[1000px] object-cover object-center  h-[600px]" loading="lazy" />
+    <div className=" bg-image">
+    <h1 className=" text-white text-[40px] text-center md:text-6xl  leading-9 tracking-wide font-bold">Andijon viloyati Baliqchi tumani 26-sonli umumiy <br /> o’rta ta'lim maktabi </h1>
+    </div>
       <section className="py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="font-manrope text-4xl font-bold text-gray-900 text-center mb-14">26-maktab to'garaklari</h2>

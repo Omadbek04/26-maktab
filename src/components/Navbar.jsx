@@ -16,7 +16,7 @@ const Navbar = () => {
     <nav className="bg-white dark:bg-gray-900 shadow-lg border-b border-indigo-400">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link to={"/"} className="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src={logo} alt="gerb" className=" object-contain w-[64px] h-[64px]" />
+          <img src={logo} alt="gerb" className=" object-contain w-[48px] h-[48px]" />
         </Link>
        
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">

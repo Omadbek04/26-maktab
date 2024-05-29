@@ -1,9 +1,8 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Root from "./Layout/Root";
-import 'flowbite';
-import 'flowbite/dist/flowbite.css'
-import {  Galeriya, Home, Jadvalar, NotFound, Yangiliklar } from "./components";
+import { Galeriya, Home, Jadvalar, NotFound, Yangiliklar } from "./components";
 import MakabJaqida from "./components/MakabJaqida";
+import Oqtuvchilar from "./components/Oqtuvchilar";
 export default function App() {
   const route = createBrowserRouter([
     {
@@ -30,6 +29,10 @@ export default function App() {
         {
           path: "jadvalar",
           element: <Jadvalar />,
+        },
+        {
+          path: "oqtuvchilar",
+          element: <Oqtuvchilar />,
         },
       ],
     },

@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { pathname } = useLocation();
+  // const { pathname } = useLocation();
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -37,7 +37,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link to={"/galeriya"} className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
-                Galeriya
+                Galereya
               </Link>
             </li>
             <li>
@@ -55,6 +55,11 @@ const Navbar = () => {
                 Maktab haqida
               </Link>
             </li>
+            <li>
+            <Link to={"/oqtuvchilar"} className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+              O'qtuvchilar
+            </Link>
+          </li>
           </ul>
         </div>
       </div>

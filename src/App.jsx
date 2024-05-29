@@ -1,6 +1,8 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Root from "./Layout/Root";
-import { Aloqa, Galeriya, Home, Jadvalar, NotFound, Yangiliklar } from "./components";
+import 'flowbite';
+import 'flowbite/dist/flowbite.css'
+import {  Galeriya, Home, Jadvalar, NotFound, Yangiliklar } from "./components";
 import MakabJaqida from "./components/MakabJaqida";
 export default function App() {
   const route = createBrowserRouter([

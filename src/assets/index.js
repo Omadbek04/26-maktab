@@ -21,3 +21,10 @@ export { default as jadval } from "./jadval.jpg";
 export { default as y1 } from "./y1.jpg";
 export { default as y2 } from "./y2.jpg";
 export { default as y3 } from "./y3.jpg";
+export { default as h1 } from "./h1.jpg";
+export { default as h2 } from "./h2.jpg";
+export { default as h3 } from "./h3.jpg";
+export { default as h4 } from "./h4.jpg";
+export {default as t1} from"./t1.jpg"
+export {default as t2} from"./2.jpg"
+export {default as t3} from"./t3.jpg"

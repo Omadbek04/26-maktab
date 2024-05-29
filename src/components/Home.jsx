@@ -1,21 +1,28 @@
 import { useEffect } from "react";
-import "flowbite/dist/flowbite.css";  // Ensure correct import path for CSS
-import "flowbite";
-
-import { h1, h2, h3, h4, t1, t2, t3 } from "../assets";
+import "flowbite/dist/flowbite.css"; // Ensure correct import path for CSS
+import { h1, h2, h3, h4, t1, t2, t3 } from "../assets"; // Ensure paths to assets are correct
 
 const Home = () => {
   useEffect(() => {
     const loadFlowbite = async () => {
-      const { Carousel } = await import("flowbite");
-      const carousels = document.querySelectorAll("[data-carousel]");
-      carousels.forEach((carouselElement) => {
-        new Carousel(carouselElement, {
-          interval: 5000,
+      try {
+        const { Carousel } = await import("flowbite");
+        const carousels = document.querySelectorAll("[data-carousel]");
+        carousels.forEach((carouselElement) => {
+          new Carousel(carouselElement, {
+            interval: 5000,
+          });
         });
-      });
+      } catch (error) {
+        console.error("Error loading Flowbite:", error);
+      }
     };
-    loadFlowbite();
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", loadFlowbite);
+    } else {
+      loadFlowbite();
+    }
   }, []);
 
   return (
@@ -67,7 +74,7 @@ const Home = () => {
           <div className="flex justify-center mb-14 gap-y-8 lg:gap-y-0 flex-wrap md:flex-wrap lg:flex-nowrap lg:flex-row lg:justify-between lg:gap-x-8">
             <div className="group cursor-pointer w-full max-lg:max-w-xl lg:w-1/3 border border-gray-300 rounded-2xl p-5 transition-all duration-300 hover:border-indigo-600">
               <div className="flex items-center mb-6">
-                <img src={t1} alt="Harsh image" className="rounded-lg w-full h-[260px] object-cover" />
+                <img src={t1} alt="Adabiyot to'garagi" className="rounded-lg w-full h-[260px] object-cover" />
               </div>
               <div className="block">
                 <h4 className="text-gray-900 font-medium leading-8 mb-9">Adabiyot to'garagi</h4>
@@ -79,7 +86,7 @@ const Home = () => {
             </div>
             <div className="group cursor-pointer w-full max-lg:max-w-xl lg:w-1/3 border border-gray-300 rounded-2xl p-5 transition-all duration-300 hover:border-indigo-600">
               <div className="flex items-center mb-6">
-                <img src={t2} alt="John image" className="rounded-lg w-full h-[260px] object-cover" />
+                <img src={t2} alt="Matematika to'garagi" className="rounded-lg w-full h-[260px] object-cover" />
               </div>
               <div className="block">
                 <h4 className="text-gray-900 font-medium leading-8 mb-9">Matematika to'garagi</h4>
@@ -91,7 +98,7 @@ const Home = () => {
             </div>
             <div className="group cursor-pointer w-full max-lg:max-w-xl lg:w-1/3 border border-gray-300 rounded-2xl p-5 transition-all duration-300 hover:border-indigo-600">
               <div className="flex items-center mb-6">
-                <img src={t3} alt="Alexa image" className="rounded-lg w-full h-[260px] object-cover" />
+                <img src={t3} alt="Deksikologiya to'garagi" className="rounded-lg w-full h-[260px] object-cover" />
               </div>
               <div className="block">
                 <h4 className="text-gray-900 font-medium leading-8 mb-9">Deksikologiya to'garagi</h4>

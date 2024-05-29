@@ -1,4 +1,4 @@
-import { g1, g10, g11, g12, g13, g14, g15, g16, g17, g18, g19,  g3, g4, g5, g6, g7, g8, g9 } from "../assets";
+import { g1, g10, g11, g12, g13, g14, g15, g16, g17, g18, g19, g3, g4, g5, g6, g7, g8, g9, u1 } from "../assets";
 
 export const card = [
   {
@@ -72,5 +72,47 @@ export const card = [
   {
     id: 19,
     image: g19,
+  },
+];
+export const ustozlar = [
+  {
+    id: 1,
+    image: u1,
+    name: "O'rmonov Ahmadullo",
+    lavozim: " Maktab direktori",
+    tel: "97 272 44 67",
+    tajriba: "20",
+  },
+  {
+    id: 2,
+    image: u1,
+    name: "Usmanov Oybek",
+    lavozim: "Direktor o'rinbosari",
+    tel: "97 988 16 26",
+    tajriba: "15",
+  },
+  {
+    id: 3,
+    image: u1,
+    name: "To'ychiyeva sohibahon",
+    lavozim: "Biologiya  fani o'qituvchisi",
+    tel: "88 999 91 03",
+    tajriba: "17",
+  },
+  {
+    id: 4,
+    image: u1,
+    name: "Jamolova Yayraxon",
+    lavozim: "Fizika fani o'qituvchisi",
+    tel: "97 417 04 07 ",
+    tajriba: "13",
+  },
+  {
+    id: 5,
+    image: u1,
+    name: "Nodirov Umidjon",
+    lavozim: "yoshlar yetakchisi",
+    tel: "97 622 08 24",
+    tajriba: "7",
   },
 ];
